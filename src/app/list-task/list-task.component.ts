@@ -13,9 +13,16 @@ export class ListTaskComponent implements OnInit {
   }
   //users!:any;
   users=[
-    {id:1,name:"vidhya",email:"vidhya@gmail.com"},
-    {id:2,name:"kanna",email:"vidhya@gmail.com"}
+    {id:1,name:"vidhya",email:"vidhya@gmail.com",status:"Pending"},
+    {id:2,name:"kanna",email:"vidhya@gmail.com",status:"Pending"}
 
+  ]
+  tasks = [
+
+    {id:1, name:"Install java", status:"completed"},
+  
+    {id:2, name:"Instaqll nodejs", status:"pending"},
+  
   ]
   deleteUser(){
     alert("Succesfully Deleted")

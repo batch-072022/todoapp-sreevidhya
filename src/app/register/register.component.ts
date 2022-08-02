@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class RegisterComponent implements OnInit {
+  router: any;
 
 
 
@@ -24,18 +25,11 @@ export class RegisterComponent implements OnInit {
 
   }
 
-  name = "Sreevidhya";
+  onSubmit(){
 
-  isValidUser = false;
+    alert("Registration is successful");
 
-  departments =["CSE", "IT" , "MECH" , "ECE"]
-
-  onClick(){
-
-    alert("Button Clicked");
+    this.router.navigateByUrl("/login")
 
   }
-
-
-
 }

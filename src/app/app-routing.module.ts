@@ -4,12 +4,14 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { ListTaskComponent } from './list-task/list-task.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ViewUserComponent } from './view-user/view-user.component';
 
 const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
   {path: 'addtask' ,component:AddTaskComponent},
   {path: 'listtask' ,component:ListTaskComponent},
+  {path:'viewuser',component:ViewUserComponent},
   {path:'',redirectTo: 'login',pathMatch:'full'}];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

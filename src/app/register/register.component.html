@@ -1,65 +1,40 @@
-<h1>Registration Form</h1>
+<h3> User Registrtion</h3>
 
-<!--Interpolation {{propertyname}}-->
+<form (submit)="onSubmit()">
 
-<h3>Interpolation</h3>
+    <div>
 
-Name: {{name}}
+        <label for="name">Name</label>
 
-<h3>Structural Directive - *ngIf</h3>
+        <input type="text" name="name" id="name" placeholder="Enter name">
 
-<!--Directives ( Structural Directives -If/for)-->
+    </div>
 
-<div *ngIf="isValidUser">
+    <div>
 
-    Valid User
+        <label for="email">Email</label>
 
-</div>
+        <input type="email" name="email" id="email" placeholder="Enter email">
 
-<div *ngIf="!isValidUser">
+    </div>
 
-    Invalid User
+    <div>
 
-</div>
+        <label for="password">Password</label>
 
-<h3>Structural Directive - *ngFor</h3>
+        <input type="password " name="password" id="password"
 
-<!-- for loop-->
+        placeholder="Enter password">
 
-<!-- <ul>
+    </div>
 
-    <li>CSE</li>
+    <div>
 
-    <li>IT</li>
+        <button types="submit">Submit</button> &nbsp;
 
-    <li>MECH</li>
+        <button type="reset">reset</button>
 
-</ul> -->
+    </div>
 
-<ul>
 
-    <li *ngFor="let d of departments">{{d}}</li>
 
-</ul>
-
-<table border="1">
-
-    <thead><tr><th>Sno</th><th>Name</th></tr></thead>
-
-    <tbody>
-
-        <tr *ngFor="let d of departments;let i=index">
-
-            <td>{{i+1}}</td>
-
-            <td>{{d}}</td>
-
-        </tr>
-
-    </tbody>
-
-</table>
-
-<!-- Event Binding ( click )-->
-
-<button type="button" (click)="onClick()">Button</button>

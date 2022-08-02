@@ -10,6 +10,8 @@ import { ListTaskComponent } from './list-task/list-task.component';
 import { EditTaskComponent } from './edit-task/edit-task.component';
 import { DeleteTaskComponent } from './delete-task/delete-task.component';
 import { HeaderComponent } from './header/header.component';
+import { ViewUserComponent } from './view-user/view-user.component';
+import { EdituserComponent } from './edituser/edituser.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeaderComponent } from './header/header.component';
     ListTaskComponent,
     EditTaskComponent,
     DeleteTaskComponent,
-    HeaderComponent
+    HeaderComponent,
+    ViewUserComponent,
+    EdituserComponent
   ],
   imports: [
     BrowserModule,
