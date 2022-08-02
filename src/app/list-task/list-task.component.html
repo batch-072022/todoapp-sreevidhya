@@ -1,0 +1,61 @@
+<h1>List Users</h1>
+
+
+
+
+<table class="Table table-bordered" *ngIf="users">
+
+    <thead>
+
+        <tr>
+        
+        <th> Sno</th>
+        <th>Id</th>
+
+        <th> name</th>
+        <th>Email</th>
+
+        <th>Action</th>
+
+    </tr>        
+
+
+
+
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let u of users ; let i = index">
+
+            <td>{{i+1}}</td>
+
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.email}}</td>
+
+
+            <td>
+
+                <a routerLink="edit" class="btn btn-info">edit</a> &nbsp;&nbsp;
+
+                <button type="button" class="btn btn-danger"
+
+                (click)="deleteUser() ">Delete</button>
+
+            </td>
+
+        </tr>
+
+    </tbody>
+
+</table>
+
+
+
+<div *ngIf="!users">
+
+    No records
+
+</div>
+
